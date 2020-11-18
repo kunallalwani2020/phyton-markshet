@@ -1,0 +1,74 @@
+name = input("Enter student name:             ")
+id = input("Enter student ID:                 ")
+Class = input("Enter student Class:           ")
+subj1=int(input("Enter your English:          "));
+subj2=int(input("Enter your Math:             "));
+subj3=int(input("Enter your Chemisty:         "));
+subj4=int(input("Enter your Physics:          "));
+subj5=int(input("Enter your Pst:              "));
+sum =(subj1+subj2+subj3+subj4+subj5)
+print ("obtained mark" , sum)
+per = sum/500 *100;
+print("Percentage " ,per)
+
+if per >= 90:
+    print("A+")
+elif per >=80:
+    print("A")
+    
+elif per>=70:
+    print("B+")
+elif per>=60:
+    print("B")
+elif per>=50:
+    print("C+")
+elif per>=40:
+    print("C")
+else:
+    print("Fail")
+
+    
+    
+    
+print("*********************Student's Marksheet***************************")
+print("Student name: " , name)
+print("student ID: ", id)
+print("Student's Class: ",Class)
+print("Total marks:  500")
+print("Obtained marks: ",sum)
+print("Percentage: ",per)
+if per >= 90:
+    print("Grade: A+")
+elif per >=80:
+    print("Grade: A")
+    
+elif per>=70:
+    print("Grade: B+")
+elif per>=60:
+    print("Grade: B")
+elif per>=50:
+    print("Grade: C+")
+elif per>=40:
+    print("Grade: C")
+else:
+    print("Grade: Fail")
+    
+i = 0
+
+
+if subj1<=40:
+        i = i + 1
+
+if subj2<=40:
+        i = i + 1
+
+if subj3<=40:
+        i=i+1
+
+if subj4<=40:
+        i=i+1
+
+if subj5<=40:
+        i=i+1
+"
+print("Failed subject count: ",i)
